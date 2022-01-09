@@ -1,0 +1,39 @@
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
+    position: relative;
+} 
+
+thead {
+    height: 60px;
+    background: var(--main);
+}
+thead tr th {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+tbody {
+    border: 5px solid black;
+}
+
+tbody tr {
+    height: 85px;
+}
+
+tbody tr:nth-child(even) {
+    background: #e5e5e5
+}
+
+tbody tr:hover {
+    background-color: var(--logo);
+}

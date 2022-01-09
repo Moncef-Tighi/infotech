@@ -9,11 +9,11 @@
     z-index: 3;
     display: flex;
     justify-content: space-between;
-    background-color: var(--secondary);
+    background-color: var(--main);
     border-bottom: 2px solid var(--logo);
   }
   .nav:hover {
-    background-color: var(--main);
+    background-color: var(--secondary);
   }
   .nav > .nav-header {
     display: inline;
