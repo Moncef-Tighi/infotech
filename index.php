@@ -10,6 +10,8 @@
   <head>    
       <link rel="stylesheet" href="CSS/index.css" media="screen" type="text/css" />
       <script defer src="JavaScript/Slider.js"></script>
+      <script defer src="JavaScript/menuIntersection.js"></script>
+
   </head>
 
   <body>

@@ -222,6 +222,6 @@ section {
     }
 
     .nav {
-      background-color: transparent;
+      background-color: var(--secondary);
       border: none;
     }
