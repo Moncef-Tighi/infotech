@@ -1,0 +1,75 @@
+  
+  .nav {
+    height: 50px;
+    background-color: transparent;
+    position: fixed;
+    top:0;
+    padding: 10px;
+    width: 98.7%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    border-bottom: 2px solid var(--logo);
+  }
+  .nav:hover {
+    background-color: var(--main);
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-title {
+    display: inline-block;
+    font-family: serif, Arial;
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--logo);
+    font-weight: 550;
+    align-self: center;
+  }
+  .nav > .nav-links {
+    font-size: 26px;
+    display: inline;
+    float: right;
+
+  }
+  .nav > .nav-links > ul li a{
+    color: var(--secondary);
+    line-height: 40px;
+    font-size: 18px;
+    display: block;
+    padding: 0 8px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin-top: 5px;
+    
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+    background-color: var(--main);
+    
+    
+  }
+  .nav > .nav-links > ul li:hover{
+      background-color:  var(--logo);
+      border-radius: 5px;
+  }
+
+ .nav > div > button {
+   width: 235px;
+ }
+
+ .welcome {
+   font-size: 25px;
+   color: var(--logo);
+   display: flex;
+   align-items: center;
+ }
+
+ 

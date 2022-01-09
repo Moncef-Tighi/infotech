@@ -1,0 +1,159 @@
+:root {
+  --main : black;
+  --secondary : white;
+  --logo : RGB(222, 184, 87);
+  font-family: Georgia, "Times New Roman";
+
+}
+
+body {
+  margin: 0;
+  background-color: var(--main);
+}
+
+/* Style de base pour toute les formes */
+form {
+  padding: 30px;
+}
+
+
+/* Full-width inputs */
+input, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type="radio"] {
+  width: 25px;
+  padding:0px;
+  margin: 0px;
+}
+/* Set a style for all buttons */
+
+
+select {
+  display: block;
+  height: 40px;
+  width: 75%;
+  font-size: 25px;
+  padding: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.company {
+  color: var(--logo);
+  padding: 10px;
+  position: relative;
+}
+
+.company::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 4;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: var(--main);
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  opacity: 0.9;
+}
+
+button {
+  background-color: var(--main);
+  border: 2px solid var(--logo);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 8px;
+  height: 50px;
+  color: var(--secondary);
+  font-size: 25px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: var(--logo);
+  border: 4px solid var(--main);
+  border-radius: 20px;
+
+}
+
+.price {
+  color: var(--logo);
+  font-size: 150%;
+}
+
+.liste {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    background-color: #f3f3f3;
+    padding: 5rem 6rem;
+    box-shadow: 0 4rem 6rem rgb(0 0 0 / 30%);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.btn--close-modal {
+  color: var(--main);
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.btn--close-modal:hover {
+  background: none;
+  border: none;
+}
+.overlay {
+  display: none;
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.main_container {
+  background-color: var(--secondary);
+  border: 3px outset var(--logo);
+  min-height: 50%;
+  width: 80%;
+  margin: auto;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#facture {
+  font-size: 200%;
+  list-style: none;
+  text-align-last: justify;
+}

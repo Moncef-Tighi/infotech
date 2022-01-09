@@ -1,0 +1,39 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    
+    <link rel="stylesheet" href="CSS/main.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="CSS/footer.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="CSS/header.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="CSS/sidebar.css" media="screen" type="text/css" />
+
+  <script defer src="JavaScript/connexion.js"></script>
+
+	<title>InfoTech</title>
+
+</head>
+
+<div class="nav">
+
+    <div class="nav-links">
+        <ul>
+           <li><a href="index.php">Accueil</a></li>
+           <li><a href="liste_produits.php">Liste des produits</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-title">
+        InfoTech
+    </div>
+ 
+    <div class='welcome'>
+        <?php
+        if (isset($_SESSION["username"])){
+            echo("<p> Bienvenue ".$_SESSION["username"]."</p>");
+         } else {
+             echo("<button id='connexion'>Connexion</button>");
+         }
+
+        ?>
+    </div>
+
+</div>
